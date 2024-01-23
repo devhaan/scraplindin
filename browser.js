@@ -52,15 +52,15 @@ async function scrapeLinkedInJobs(country, jobType, techStack) {
   const page = await browser.newPage();
 
   // Navigate to LinkedIn jobs page
-  await page.goto("https://www.linkedin.com/login");
+  await page.goto("https://www.lin****in.com/login");
 
   // Wait for the search results to load
   await page.waitForSelector("#username");
-  await page.type("#username", "devendra.sourcebae.com@gmail.com", {
+  await page.type("#username", "devendra.***********ail.com", {
     delay: 150,
   });
   await page.waitForSelector("#password");
-  await page.type("#password", "Devhaan@4522", { delay: 150 });
+  await page.type("#password", "******", { delay: 150 });
   await page.click(
     "#organic-div > form > div.login__form_action_container > button",
     { delay: 250 }
@@ -68,7 +68,7 @@ async function scrapeLinkedInJobs(country, jobType, techStack) {
   await page.waitForNavigation();
   // Add a small delay before scrolling (adjust as needed)
   await page.waitForTimeout(25000);
-  await page.goto("https://www.linkedin.com/jobs");
+  await page.goto("https://www.****.com/jobs");
 
   // Replace with your XPath expression
   let xpathExpression =
